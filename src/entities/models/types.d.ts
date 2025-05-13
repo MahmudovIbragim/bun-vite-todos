@@ -5,10 +5,10 @@ namespace Product {
     per_page: number;
     total_pages: number;
     total_items: number;
-    data: ProductData;
+    data: ProductData[]
   };
   type ProductData = {
-    _id: number;
+    _id: number;      
     img: string;
     name: string;
     brand: string;
@@ -19,5 +19,5 @@ namespace Product {
     engineType: string;
     isFavorite: boolean;
     yearOfIssue: string;
-  }[];
+  }
 }
