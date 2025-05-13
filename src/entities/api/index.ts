@@ -4,7 +4,7 @@ const api = index.injectEndpoints({
   endpoints: (builder) => ({
     GetProduct: builder.query<Product.GetData, void>({
       query: () => ({
-        url: "jetourcars",
+        url: "todos",
         method: "GET",
       }),
       providesTags: ["Todo"],
