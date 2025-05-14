@@ -18,7 +18,7 @@ const Nav: FC<PropsType> = ({ isScroll }) => {
               navigate("/");
             }}
           >
-            <House />
+            <House color="#f3bb2efc" />
           </button>
           <button
             onClick={() => {
@@ -26,7 +26,7 @@ const Nav: FC<PropsType> = ({ isScroll }) => {
             }}
           >
             <p>Create</p>
-            <FilePlus2 />
+            <FilePlus2 color="#f3bb2efc" />
           </button>
         </div>
       </div>

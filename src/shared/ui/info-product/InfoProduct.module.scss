@@ -1,0 +1,12 @@
+.InfoProduct {
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      padding: 20px;
+      border-bottom: 2px solid #4b4a4afc;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

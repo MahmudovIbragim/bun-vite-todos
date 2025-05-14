@@ -9,7 +9,14 @@ const api = index.injectEndpoints({
       }),
       providesTags: ["Todo"],
     }),
+    GetProductById: builder.query<Product.ProductData, number>({
+      query: (id) => ({
+        url: `todos/${id}`,
+        method: "GET",
+      }),
+      providesTags: ["Todo"],
+    }),
   }),
 });
 
-export const { useGetProductQuery } = api;
+export const { useGetProductQuery, useGetProductByIdQuery } = api;

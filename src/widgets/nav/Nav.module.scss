@@ -3,6 +3,7 @@
   top: 91px;
   width: 100%;
   background-color: #191919;
+  border-top: solid 2px #818181fc;
 
   .content {
     display: flex;
@@ -20,18 +21,16 @@
       transition: 0.3s;
 
       p {
-        color: #fff;
+        color: #f3bb2efc;
         font-size: 16px;
         font-weight: 400;
-      }
-      svg {
-        color: #fff;
       }
     }
   }
 }
 .scroll {
   top: 90px;
+  border-top: 0px;
 
   .content {
     padding: 8px 0px;

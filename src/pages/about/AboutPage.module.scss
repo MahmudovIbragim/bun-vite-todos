@@ -1,0 +1,32 @@
+.AboutPage {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    .image {
+      max-width: 900px;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .info {
+      .title_product {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        margin-bottom: 20px;
+        h2 {
+          font-size: 30px;
+          font-weight: 800;
+        }
+        p {
+          font-size: 35px;
+          font-weight: 900;
+          color: #f3bb2efc;
+        }
+      }
+    }
+  }
+}
