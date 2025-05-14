@@ -1,0 +1,80 @@
+.EngineType {
+  position: relative;
+  width: fit-content;
+  input {
+    cursor: pointer;
+    user-select: none;
+    caret-color: transparent;
+  }
+  .icon {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    transition: 0.2s;
+  }
+  .arrowUp {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    transition: 0.2s;
+    transform: rotate(-180deg);
+  }
+
+  .drop {
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    max-width: 243px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    transition: 0.2s;
+
+    p {
+      border-radius: 8px;
+      background-color: whitesmoke;
+      padding: 10px 12px;
+      color: black;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.2s;
+      user-select: none;
+
+      &:hover {
+        background-color: rgb(209, 207, 207);
+        transition: 0.2s;
+      }
+    }
+  }
+  .hidden {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    z-index: -1;
+    max-width: 243px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    transition: 0.2s;
+    p {
+      border-radius: 8px;
+      background-color: whitesmoke;
+      padding: 0px 12px;
+      color: black;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: rgb(209, 207, 207);
+        transition: 0.2s;
+      }
+    }
+  }
+}

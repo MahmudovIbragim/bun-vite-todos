@@ -13,11 +13,24 @@ namespace Product {
     name: string;
     brand: string;
     power: string;
-    price: string;
+    price: string | number;
     mileage: string;
     engineSize: string;
     engineType: string;
     isFavorite: boolean;
+    yearOfIssue: string;
+  };
+
+  type CreateProduct = {
+    img: string;
+    name: string;
+    brand: string;
+    power: string;
+    price: string | number;
+    mileage: string;
+    engineSize: string;
+    engineType: string;
+    isFavorite: string;
     yearOfIssue: string;
   };
 }
