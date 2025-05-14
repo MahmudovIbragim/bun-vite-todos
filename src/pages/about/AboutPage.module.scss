@@ -11,6 +11,9 @@
       }
     }
     .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       .title_product {
         display: flex;
         flex-direction: column;
@@ -26,6 +29,11 @@
           font-weight: 900;
           color: #f3bb2efc;
         }
+      }
+      .btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
     }
   }

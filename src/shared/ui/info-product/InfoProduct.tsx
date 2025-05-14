@@ -1,10 +1,6 @@
-import type { FC } from "react";
 import scss from "./InfoProduct.module.scss";
 
-type PropsType = {
-  data?: Product.ProductData;
-};
-const InfoProduct: FC<PropsType> = ({ data }) => {
+const InfoProduct = ({ data }: { data?: Product.ProductData }) => {
   return (
     <div className={scss.InfoProduct}>
       <ul>

@@ -1,0 +1,18 @@
+.Button {
+  padding: 12px 25px;
+  background-color: #f3bb2efc;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  transition: 0.2s;
+  &:hover {
+    background-color: #cc9c24fc;
+    transition: 0.2s;
+  }
+  &:active {
+    transition: 0.1s;
+    background-color: #f3bb2efc;
+  }
+}
