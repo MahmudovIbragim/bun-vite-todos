@@ -6,6 +6,9 @@ const api = index.injectEndpoints({
       query: () => ({
         url: "todos",
         method: "GET",
+        params: {
+          per_page: 30,
+        },
       }),
       providesTags: ["Todo"],
     }),
@@ -16,7 +19,29 @@ const api = index.injectEndpoints({
       }),
       providesTags: ["Todo"],
     }),
+    CreateProduct: builder.mutation<Product.ProductData, Product.CreateProduct>(
+      {
+        query: (data) => ({
+          url: "todos",
+          method: "POST",
+          body: data,
+        }),
+        invalidatesTags: ["Todo"],
+      }
+    ),
+    DeleteProduct: builder.mutation<Product.ProductData, number>({
+      query: (id) => ({
+        url: `todos/${id}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["Todo"],
+    }),
   }),
 });
 
-export const { useGetProductQuery, useGetProductByIdQuery } = api;
+export const {
+  useGetProductQuery,
+  useGetProductByIdQuery,
+  useCreateProductMutation,
+  useDeleteProductMutation,
+} = api;

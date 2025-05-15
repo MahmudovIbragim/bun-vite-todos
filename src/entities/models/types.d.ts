@@ -13,7 +13,7 @@ namespace Product {
     name: string;
     brand: string;
     power: string;
-    price: string | number;
+    price: string;
     mileage: string;
     engineSize: string;
     engineType: string;
@@ -26,11 +26,11 @@ namespace Product {
     name: string;
     brand: string;
     power: string;
-    price: string | number;
+    price: string;
     mileage: string;
     engineSize: string;
     engineType: string;
-    isFavorite: string;
+    isFavorite: boolean;
     yearOfIssue: string;
   };
 }

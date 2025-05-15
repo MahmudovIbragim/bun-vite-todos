@@ -7,6 +7,7 @@ import Input from "../../shared/ui/input/Input";
 import scss from "./FormProduct.module.scss";
 import type { FC } from "react";
 import EngineType from "../../shared/ui/engine-type/EngineType";
+import Button from "../../shared/ui/button/Button";
 
 type TypeProps = {
   register: UseFormRegister<FieldValues>;
@@ -19,24 +20,31 @@ const FormProduct: FC<TypeProps> = ({ register, handleCreate, FormSubmit }) => {
     <form className={scss.FormProduct} onSubmit={FormSubmit(handleCreate)}>
       <div className={scss.content}>
         <div className={scss.left_content}>
-          <label>
-            <b>Марка авто</b>
-            <Input
-              placeholder="Введите название"
-              type="text"
-              register={register}
-              title="brand"
-            />
-          </label>
-          <label>
-            <b>Ссылка на картинку</b>
-            <Input
-              placeholder="Ссылка на картинку"
-              type="text"
-              register={register}
-              title="img"
-            />
-          </label>
+          <div className={scss.inp}>
+            <label>
+              <b>Марка авто</b>
+              <Input
+                placeholder="Введите название"
+                type="text"
+                register={register}
+                title="brand"
+              />
+            </label>
+            <label>
+              <b>Ссылка на картинку</b>
+              <Input
+                placeholder="Ссылка на картинку"
+                type="text"
+                register={register}
+                title="img"
+              />
+            </label>
+          </div>
+          <div className={scss.btn}>
+            <Button type="submit" submit={FormSubmit(handleCreate)}>
+              Создать
+            </Button>
+          </div>
         </div>
         <div className={scss.right_content}>
           <div className={scss.info_title}>
@@ -81,18 +89,12 @@ const FormProduct: FC<TypeProps> = ({ register, handleCreate, FormSubmit }) => {
             <label>
               <b>Тип двигателя</b>
               <EngineType register={register} />
-              {/* <Input
-                placeholder="Тип двигателя"
-                type="text"
-                register={register}
-                title="engineType"
-              /> */}
             </label>
             <label>
               <b>Объем двигателя</b>
               <Input
                 placeholder="Объем двигателя"
-                type="number"
+                type="text"
                 register={register}
                 title="engineSize"
               />
@@ -108,9 +110,6 @@ const FormProduct: FC<TypeProps> = ({ register, handleCreate, FormSubmit }) => {
             </label>
           </div>
         </div>
-      </div>
-      <div className={scss.btn}>
-        <button onSubmit={FormSubmit(handleCreate)}>create</button>
       </div>
     </form>
   );

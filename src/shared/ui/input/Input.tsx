@@ -25,7 +25,9 @@ const Input: FC<PropsTypes> = ({
       placeholder={placeholder}
       type={type}
       onClick={click}
-      {...register(title, { required: true })}
+      {...register(title, {
+        required: true,
+      })}
     />
   );
 };
