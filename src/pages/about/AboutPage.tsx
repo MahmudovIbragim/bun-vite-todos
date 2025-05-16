@@ -42,7 +42,7 @@ const AboutPage = () => {
               >
                 Удалить
               </Button>
-              <Button click={() => {}}>Редактировать</Button>
+              <Button click={() => {}}>Нравится</Button>
             </div>
           </div>
         </div>
